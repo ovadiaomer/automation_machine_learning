@@ -8,13 +8,14 @@ from src.form.form_filler import FormFiller
 @pytest.mark.asyncio
 async def test_form_filler():
     form_data = {
-        'full-name': 'Omer',
-        'role': 'Automation TL',
-        'company': 'Auto Gennie',
-        'phone-number': '1234567890',
-        'email': 'test_user@auto.com',
+        'name': 'Omer',
+        'phone1Prefix': '+972',
+        'phone1': '1234567890',
+        'email': 'test_user@autoGennie.com',
+        'note': 'xyz',
+        'category': 'Product',
         'button': {
-            'type': 'submit'
+            'type': 'ok'
         }
     }
     expected_data = {
